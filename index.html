@@ -2,22 +2,6 @@
 <html lang="en">
 
 <head>
-    <script>
-        function scrollToChapter(chapterId) {
-            const element = document.getElementById(chapterId);
-            if (element) {
-                element.scrollIntoView({
-                    behavior: 'auto',
-                    block: 'start'
-                });
-
-                // Update URL without causing page reload
-                if (history.pushState) {
-                    history.pushState(null, null, '#' + chapterId);
-                }
-            }
-        }
-    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Unwinnable Game</title>
@@ -125,17 +109,17 @@
     <div class="toc">
         <h2>Table of Contents</h2>
         <ul>
-            <li><a onclick="scrollToChapter('chapter1')">Chapter 1 – The Unwinnable Goal</a></li>
-            <li><a onclick="scrollToChapter('chapter2')">Chapter 2 – The Architecture of Suffering</a></li>
-            <li><a onclick="scrollToChapter('chapter3')">Chapter 3 – Escaping the Loop</a></li>
-            <li><a onclick="scrollToChapter('chapter4')">Chapter 4 – The Illusion of the Self</a></li>
-            <li><a onclick="scrollToChapter('chapter5')">Chapter 5 – Beyond the Self</a></li>
-            <li><a onclick="scrollToChapter('chapter6')">Chapter 6 – Living Without Fear</a></li>
-            <li><a onclick="scrollToChapter('chapter7')">Chapter 7 – Embodying Freedom</a></li>
-            <li><a onclick="scrollToChapter('chapter8')">Chapter 8 – The Paradox of Meaning</a></li>
-            <li><a onclick="scrollToChapter('chapter9')">Chapter 9 – The Freedom Framework</a></li>
-            <li><a onclick="scrollToChapter('chapter10')">Chapter 10 – A New Way of Living</a></li>
-            <li><a onclick="scrollToChapter('epilogue')">Epilogue</a></li>
+            <li><a href="#chapter1">Chapter 1 — The Unwinnable Goal</a></li>
+            <li><a href="#chapter2">Chapter 2 — The Architecture of Suffering</a></li>
+            <li><a href="#chapter3">Chapter 3 — Escaping the Loop</a></li>
+            <li><a href="#chapter4">Chapter 4 — The Illusion of the Self</a></li>
+            <li><a href="#chapter5">Chapter 5 — Beyond the Self</a></li>
+            <li><a href="#chapter6">Chapter 6 — Living Without Fear</a></li>
+            <li><a href="#chapter7">Chapter 7 — Embodying Freedom</a></li>
+            <li><a href="#chapter8">Chapter 8 — The Paradox of Meaning</a></li>
+            <li><a href="#chapter9">Chapter 9 — The Freedom Framework</a></li>
+            <li><a href="#chapter10">Chapter 10 — A New Way of Living</a></li>
+            <li><a href="#epilogue">Epilogue</a></li>
         </ul>
     </div>
 
